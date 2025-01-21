@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 70px 40px 0;
+  text-align: center;
+  font-family: sans-serif;
+  background-color: rgb(163, 253, 253);
+}
+
+h1 {
+  padding: 12px;
+  margin: 0;
+  font-size: 4rem;
+  color: gray;
+  background-color: white;
+}
+
+p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 2rem 0;
+  text-shadow: 2px 1px 0 white;
+}
+
+p > span {
+  color: gray;
+}
+
+button {
+  font-size: 1.4rem;
+  font-family: sans-serif;
+  padding: 0.6rem 1.6rem;
+  border-radius: 8px;
+  border: 1px solid black;
+  cursor: pointer;
+  background-color: darkblue;
+  color: white;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 139, 0.579);
+}
