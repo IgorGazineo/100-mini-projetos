@@ -1,0 +1,52 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: rgb(34, 34, 34);
+  color: white;
+}
+
+header {
+  background-color: rgb(0, 0, 0);
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.right {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  cursor: pointer;
+}
+
+select {
+  border-radius: 8px;
+  padding: 3px;
+}
+
+select:focus {
+  outline: 2px solid rgb(0, 155, 251);
+}
+
+h1 {
+  text-align: center;
+  margin: 100px 0 0;
+}
