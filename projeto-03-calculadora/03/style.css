@@ -1,0 +1,48 @@
+:root {
+  --box-shadow-color: rgba(118, 252, 252, 0.655);
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 400px;
+  margin: 100px auto 0;
+  background-color: lightgray;
+  padding: 40px;
+  border-radius: 8px;
+  border: 1px solid darkslategray;
+  box-shadow: 0 0 6px var(--box-shadow-color);
+}
+
+h2 {
+  text-align: center;
+}
+
+button {
+  display: block;
+  margin: 40px auto 40px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 6px var(--box-shadow-color);
+  font-size: 16px;
+  transition: background-color 0.5s ease;
+}
+
+button:hover {
+  background-color: var(--box-shadow-color);
+}
+
+.container > div {
+  text-align: center;
+  font-size: 20px;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.container > div.active {
+  opacity: 1;
+}
