@@ -1,0 +1,142 @@
+:root {
+  --main-color: rgb(221, 236, 139);
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: var(--main-color);
+}
+
+header {
+  background-color: rgb(0, 0, 0);
+  padding: 25px;
+  margin-bottom: 50px;
+}
+
+header > h1 {
+  margin: 0;
+  text-align: center;
+  color: var(--main-color);
+}
+
+main {
+  max-width: 600px;
+  margin: auto;
+  background-color: white;
+  padding: 30px;
+  box-shadow: 0 0 6px rgba(47, 79, 79, 0.58);
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+form {
+  /* background-color: lightgray; */
+  background-color: rgb(199, 229, 239);
+  padding: 10px 20px;
+  width: 300px;
+  border-radius: 8px;
+  border: 1px solid darkgray;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+}
+
+textarea,
+input {
+  display: block;
+  margin: 8px 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 4px 4px;
+  border: 1px solid darkgray;
+  border-radius: 4px;
+}
+
+input:focus,
+textarea:focus {
+  outline: 1px solid black;
+}
+
+label {
+  font-size: 12px;
+  color: #292929;
+}
+
+button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid darkgray;
+  transition: all 0.5s ease-in;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: rgb(33, 33, 33);
+  color: white;
+}
+
+.sessao-livros {
+  background-color: var(--main-color);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.571);
+}
+
+.pesquisa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+select {
+  border-radius: 8px;
+  padding: 4px;
+  font-size: 12px;
+  width: 70px;
+}
+
+h2 {
+  text-align: center;
+  padding: 30px;
+}
+
+.livros {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /* gap: 20px; */
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.livro {
+  background-color: white;
+  width: 200px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 4px black;
+}
+
+.livros h3 {
+  margin: 12px 0;
+}
+
+.livros p {
+  font-size: 14px;
+}
+
+.livros span {
+  display: inline-block;
+  background-color: rgba(143, 188, 143, 0.626);
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid black;
+  font-size: 12px;
+}
