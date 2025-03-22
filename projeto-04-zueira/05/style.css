@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+header {
+  background-color: darkseagreen;
+  /* padding: 20px; */
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 70px;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  padding: 4px 8px;
+  width: 60px;
+  margin: 0 20px;
+  border-radius: 12px;
+  border: 2px solid rgb(0, 139, 125);
+  transition: border 0.3s ease-in-out;
+}
+
+button:active {
+  border: none;
+}
+
+aside {
+  background-color: aquamarine;
+  position: fixed;
+  top: 70px;
+  right: 0;
+  /* width: 150px; */
+  width: 0;
+  height: 100%;
+  transition: width 0.5s ease-in;
+  /* overflow: hidden; */
+}
+
+aside.active {
+  width: 200px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+li {
+  width: 100px;
+  background-color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+li:hover {
+  box-shadow: 0 0 4px darkcyan;
+}
