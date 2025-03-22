@@ -1,0 +1,56 @@
+html {
+  --border-color: rgb(222, 46, 249);
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 400px;
+  background-color: lightgrey;
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 0 4px var(--border-color);
+}
+
+input {
+  width: 50px;
+  border-radius: 6px;
+  border: 1px solid black;
+  padding: 2px 6px;
+}
+
+input:focus {
+  outline: 1px solid var(--border-color);
+}
+
+.inner-div1 {
+  margin-bottom: 20px;
+  text-align: start;
+}
+
+.inner-div2 {
+  margin-bottom: 20px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.inner-div2.active {
+  opacity: 1;
+}
+
+button {
+  font-size: 16px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 0 4px var(--border-color);
+  cursor: pointer;
+}
