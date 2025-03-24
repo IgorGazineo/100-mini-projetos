@@ -1,0 +1,122 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  text-shadow: 2px 2px 4px lightblue;
+}
+
+header {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: tomato;
+  padding: 20px 0;
+  border-radius: 8px;
+  border: 1px solid white;
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: all 0.5s ease-in;
+  transition-delay: 0.5s;
+}
+
+header.active {
+  opacity: 1;
+}
+
+h1 {
+  text-align: center;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  padding: 20px;
+  background-color: tomato;
+  opacity: 0;
+  transition: all 1s ease-in;
+  transition-delay: 1s;
+  box-sizing: border-box;
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.3);
+  border: 2px solid lightblue;
+  border-radius: 8px;
+}
+
+main.active {
+  opacity: 1;
+}
+
+.add-friends {
+  background-color: white;
+  max-width: 200px;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 4px black;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+label {
+  font-size: 14px;
+}
+
+input {
+  display: block;
+  width: 90%;
+  box-sizing: border-box;
+  margin: 8px auto 14px;
+  border-radius: 6px;
+  padding: 3px 6px;
+  border: 1px solid #5a5a5a;
+}
+
+input:focus {
+  outline: 1.5px solid lightblue;
+}
+
+button {
+  border-radius: 6px;
+  border: 1px solid #454545;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+button:hover {
+  background-color: white;
+}
+
+.remove-friends {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  background-color: white;
+  width: 150px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 4px black;
+}
+
+.name {
+  text-align: center;
+}
