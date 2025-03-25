@@ -14,21 +14,9 @@ todos.forEach((todo) => {
         </li>`;
 });
 
-const btns = document.querySelectorAll("button");
-
-const deleteTodo = function (array, index) {
-  array.splice(index, 1);
-};
-
-btns.forEach((btn, index) => {
-  btn.addEventListener("click", () => {
-    deleteTodo(todos, index);
-    ulEl.innerHTML = "";
-    todos.forEach((todo) => {
-      ulEl.innerHTML += `<li>
-    <h2>${todo.title}</h2>
-    <button>Excluir</button>
-        </li>`;
-    });
-  });
+ulEl.addEventListener("click", (event) => {
+  const clickedElement = event.target;
+  if (clickedElement.innerText === "Excluir") {
+    clickedElement.parentElement.remove();
+  }
 });
