@@ -1,0 +1,31 @@
+body {
+  font-family: sans-serif;
+}
+
+ul {
+  margin: 80px auto 0;
+  padding: 50px 0;
+  max-width: 500px;
+  background-color: darkturquoise;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+li {
+  width: 150px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 4px darkslategray;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:active {
+  box-shadow: 0 0 2px darkslategray;
+}
