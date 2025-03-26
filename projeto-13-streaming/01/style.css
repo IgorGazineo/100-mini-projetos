@@ -1,0 +1,81 @@
+body {
+  font-family: sans-serif;
+}
+
+main {
+  max-width: 70%;
+  background-color: #222222;
+  margin: 30px auto;
+  padding: 40px 0;
+  border-radius: 12px;
+  box-shadow: 0 0 4px lightsteelblue;
+}
+
+.search-bar {
+  position: relative;
+  max-width: 30%;
+  background-color: white;
+  /* padding: 5px 10px; */
+  margin: 0 auto 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 10px 15px;
+  border: 2px solid lightsteelblue;
+}
+
+input:focus {
+  outline: 2px solid lightsteelblue;
+}
+
+span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  font-size: 18px;
+  background-color: lightsteelblue;
+  padding: 4px 12px;
+  cursor: pointer;
+  border-radius: 20px 20px;
+}
+
+.movies-list {
+  background-color: darkred;
+  max-width: 70%;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+li {
+  background-color: white;
+  width: 200px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 6px #202020;
+  border-radius: 8px;
+}
