@@ -1,0 +1,19 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0;
+  height: 100vh;
+}
+
+input {
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid rgb(96, 96, 96);
+}
+
+input:focus {
+  outline: 1px solid rgb(45, 141, 251);
+}
